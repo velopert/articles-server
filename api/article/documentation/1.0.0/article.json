@@ -573,34 +573,6 @@
               }
             }
           },
-          "comments": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "message": {
-                  "type": "string"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"

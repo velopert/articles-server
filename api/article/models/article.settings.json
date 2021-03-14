@@ -15,7 +15,8 @@
       "type": "string"
     },
     "body": {
-      "type": "text"
+      "type": "text",
+      "private": false
     },
     "user": {
       "plugin": "users-permissions",
@@ -23,6 +24,7 @@
     },
     "comments": {
       "via": "article",
+      "private": true,
       "collection": "comment"
     }
   }

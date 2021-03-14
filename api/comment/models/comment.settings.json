@@ -19,6 +19,7 @@
       "model": "user"
     },
     "article": {
+      "private": true,
       "model": "article",
       "via": "comments"
     }

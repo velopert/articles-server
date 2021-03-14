@@ -1,40 +1,24 @@
 {
   "routes": [
     {
-      "method": "GET",
-      "path": "/comments",
-      "handler": "comment.find",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/comments/count",
-      "handler": "comment.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/comments/:id",
-      "handler": "comment.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "POST",
-      "path": "/comments",
+      "path": "/articles/:articleId/comments",
       "handler": "comment.create",
       "config": {
         "policies": []
       }
     },
     {
+      "method": "GET",
+      "path": "/articles/:articleId/comments",
+      "handler": "comment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
-      "path": "/comments/:id",
+      "path": "/articles/:articleId/comments/:id",
       "handler": "comment.update",
       "config": {
         "policies": []
@@ -42,7 +26,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/comments/:id",
+      "path": "/articles/:articleId/comments/:id",
       "handler": "comment.delete",
       "config": {
         "policies": []
